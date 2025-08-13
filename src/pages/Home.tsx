@@ -3,12 +3,12 @@ import { ArrowRight, CheckCircle, Users, Award, Clock, Phone ,MessageSquare} fro
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import heroImage from '/images/hero-image2.jpg';
-import rehabImage from '/images/physiotherapy.png';
-import surgicalImage from '/images/medical.png';
-import orthopedicImage from '/images/orthopedic.png';
-import sports from '/images/sports.png';
-import ambulance from '/images/ambulance.png';
+import heroImage from '@/assets/hero-image2.jpg';
+import rehabImage from '@/assets/physiotherapy.png';
+import surgicalImage from '@/assets/medical.png';
+import orthopedicImage from '@/assets/orthopedic.png';
+import sports from '@/assets/sports.png';
+import ambulance from '@/assets/ambulance.png';
 
 const Home: React.FC = () => {
   const productCategories = [
