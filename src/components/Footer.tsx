@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook,Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,32 +8,38 @@ const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Company Info 8 */}
           <div className='space-y-4'>
-            <div className='flex items-center space-x-3'>
-              <div className='w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center '>
-                <span className='text-primary-foreground font-bold text-xl'>F</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              {/* Logo Image */}
+              <img
+                src="/images/logo.png"
+                alt="Famcare Logo"
+                className="w-10 h-10 rounded-lg object-cover"
+              />
+
+              {/* Text Section */}
               <div>
-                <span className='text-xl font-bold bg-gradient-primary bg-clip-text text-transparent'>
+                <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                   FAMCARE
                 </span>
-                <p className='text-xs text-muted-foreground'>Medical Supplies</p>
+                <p className="text-xs text-muted-foreground">Medical Supplies</p>
               </div>
             </div>
+
             <p className='text-sm text-muted-foreground leading-relaxed'>
               Leading provider of quality medical equipment and supplies in kenya.
               Serving hospitals, clinics, and healthcare institutions since 2020.
             </p>
             <div className='flex space-x-4'>
-              <a href="#" className='text-muted-foreground hover:text-primary transition-colors'>
+              <a href="https://www.facebook.com/profile.php?id=100075969916369" target='_blank' className='text-muted-foreground hover:text-primary transition-colors'>
                 <Facebook size={20} />
               </a>
-              <a href="#" className='text-muted-foreground hover:text-primary transition-colors'>
+              {/*<a href="#" className='text-muted-foreground hover:text-primary transition-colors'>
                 <Twitter size={20} />
               </a>
               <a href="#" className='text-muted-foreground hover:text-primary transition-colors'>
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className='text-muted-foreground hover:text-primary transition-colors'>
+              </a>*/}
+              <a href="https://www.instagram.com/famcarerehab/" target='_blank' className='text-muted-foreground hover:text-primary transition-colors'>
                 <Instagram size={20} />
               </a>
             </div>

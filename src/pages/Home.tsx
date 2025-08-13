@@ -1,14 +1,14 @@
 import React from 'react'
-import { ArrowRight, CheckCircle, Users, Award, Clock, Phone } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Award, Clock, Phone ,MessageSquare} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import heroImage from '@/assets/hero-image2.jpg';
-import rehabImage from '@/assets/physiotherapy.png';
-import surgicalImage from '@/assets/medical.png';
-import orthopedicImage from '@/assets/orthopedic.png';
-import sports from '@/assets/sports.png';
-import ambulance from '@/assets/ambulance.png';
+import heroImage from '/images/hero-image2.jpg';
+import rehabImage from '/images/physiotherapy.png';
+import surgicalImage from '/images/medical.png';
+import orthopedicImage from '/images/orthopedic.png';
+import sports from '/images/sports.png';
+import ambulance from '/images/ambulance.png';
 
 const Home: React.FC = () => {
   const productCategories = [
@@ -87,10 +87,10 @@ const Home: React.FC = () => {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black text-lg px-8 py-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                  <Link to="/contact" className="flex items-center space-x-2">
+                  <a href="https://wa.me/+254726749708?text=urlencodedtext" target='_blank' className="flex items-center space-x-2">
                     <Phone size={20} />
                     <span>Get Quote</span>
-                  </Link>
+                  </a>
                 </Button>
             </div>
           </div>
@@ -210,11 +210,12 @@ const Home: React.FC = () => {
             Contact us today for a personalized quote and discover how we can support your healthcare needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 text-lg px-8 py-6">
-              <Link to="/contact">Get in Touch</Link>
-            </Button>
+            <a href="https://wa.me/+254726749708?text=urlencodedtext"><Button size="lg" className="bg-green-500 text-white hover:bg-green-600 text-lg px-8 py-6">
+              <MessageSquare className="mr-2" size={20} />
+              Start Conversation
+            </Button></a>
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
-              <a href="tel:+254792345678" className="flex items-center space-x-2">
+              <a href="tel:+254726749708" className="flex items-center space-x-2">
                 <Phone size={20} />
                 <span>Call Now</span>
               </a>

@@ -4,23 +4,23 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import surgicalImage from '@/assets/stethoscopes.jpg';
-import orthopedicImage1 from '@/assets/wheelchair.jpg';
-import rehabImage2 from '@/assets/physiotherapy.jpg';
-import sportImage1 from '@/assets/connector.jpg';
-import sportImage2 from '@/assets/dumbells.jpg';
-import sportImage3 from '@/assets/treadmills.jpg';
-import sportImage4 from '@/assets/yoga.jpg';
-import sportImage5 from '@/assets/chest expander.jpg';
-import patientMonitorImage from '@/assets/patientmonitor.jpg';
-import autoclaveImage from '@/assets/autoclave-machine.jpg';
-import instrumentImage from '@/assets/surgical-instruments.jpg';
-import operatingImage from '@/assets/surgical-table-and-operating-light.jpg';
-import orthopedicImage2 from '@/assets/prosthetic.jpg';
-import orthopedicImage3 from '@/assets/walking aids.jpg';
-import ambulanceImage from '@/assets/ambulance.png';
-import rehabImage1 from '@/assets/physiotherapy2.jpg';
-import rehabImage3 from '@/assets/physiotherapy3.jpg';
+import surgicalImage from '/images/stethoscopes.jpg';
+import orthopedicImage1 from '/images/wheelchair.jpg';
+import rehabImage2 from '/images/physiotherapy.jpg';
+import sportImage1 from '/images/connector.jpg';
+import sportImage2 from '/images/dumbells.jpg';
+import sportImage3 from '/images/treadmills.jpg';
+import sportImage4 from '/images/yoga.jpg';
+import sportImage5 from '/images/chest expander.jpg';
+import patientMonitorImage from '/images/patientmonitor.jpg';
+import autoclaveImage from '/images/autoclave-machine.jpg';
+import instrumentImage from '/images/surgical-instruments.jpg';
+import operatingImage from '/images/surgical-table-and-operating-light.jpg';
+import orthopedicImage2 from '/images/prosthetic.jpg';
+import orthopedicImage3 from '/images/walking aids.jpg';
+import ambulanceImage from '/images/ambulance.png';
+import rehabImage1 from '/images/physiotherapy2.jpg';
+import rehabImage3 from '/images/physiotherapy3.jpg';
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -301,7 +301,7 @@ const Products = () => {
                           className="w-full bg-gradient-primary hover:opacity-90"
                           size="sm"
                         >
-                          <span>Request Quote</span>
+                          <a href="https://wa.me/+254726749708?text=urlencodedtext" target='_blank'><span>Chat Whatsapp</span></a>
                           <ArrowRight size={16} className="ml-2" />
                         </Button>
                       </div>
@@ -345,9 +345,9 @@ const Products = () => {
       Can't find what you're looking for? Our team can source specialized medical equipment 
       to meet your specific requirements.
     </p>
-    <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:opacity-90 transition">
+    <a href="https://wa.me/+254726749708?text=urlencodedtext" target='_blank'><button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:opacity-90 transition">
       Contact Our Specialists
-    </button>
+    </button></a>
   </div>
 </section>
 

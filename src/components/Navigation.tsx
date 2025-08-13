@@ -23,17 +23,23 @@ const Navigation = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           {/* Logo */}
-          <Link to="/" className='flex items-center space-x-3'>
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">F</span>
-            </div>
-            <div className='hidden sm:block'>
+          <Link to="/" className="flex items-center space-x-3">
+            {/* Logo Image */}
+            <img
+              src="/images/logo.png"
+              alt="Famcare Logo"
+              className="w-10 h-10 rounded-lg object-cover"
+            />
+            
+            {/* Logo Text */}
+            <div className="hidden sm:block">
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 FAMCARE
               </span>
-              <p className='text-xs text-muted-foreground'>Medical Supplies</p>
+              <p className="text-xs text-muted-foreground">Medical Supplies</p>
             </div>
           </Link>
+
 
           {/* Desktop Navigation */}
           <div className='hidden md:flex items-center space-x-8'>
@@ -61,7 +67,7 @@ const Navigation = () => {
               <Phone size={16} />
               <span>+254 726 749708</span>
             </div>
-            <a href="/contact"><Button  variant="default" size="sm" className="bg-gradient-primary">
+            <a href="https://wa.me/+254726749708?text=urlencodedtext" target='_blank'><Button  variant="default" size="sm" className="bg-gradient-primary">
               Get Quote
             </Button></a>
           </div>
