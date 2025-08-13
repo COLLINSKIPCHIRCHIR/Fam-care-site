@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.png';
+
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +28,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3">
             {/* Logo Image */}
             <img
-              src="/logo.png"
+              src={logo}
               alt="Famcare Logo"
               className="w-10 h-10 rounded-lg object-cover"
             />
