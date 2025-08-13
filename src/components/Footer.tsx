@@ -79,7 +79,7 @@ const Footer = () => {
                   <p>Nakuru Office:</p>
                   <p>Highway Towers, 4th floor Room 405</p>
                   <p className='mt-2'>Nairobi office:</p>
-                  <p>Healthcare Center, CBD</p>
+                  <p>Development house, 4th floor ,Room 204</p>
                 </div>
               </div>
               <div className='flex items-center space-x-3'>
