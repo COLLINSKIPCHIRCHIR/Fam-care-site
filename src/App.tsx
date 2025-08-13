@@ -7,7 +7,6 @@ import Contact from '@/pages/Contact';
 import Products from '@/pages/Products';
 import Clientele from '@/pages/Clientele';
 import WhyChooseUs from '@/pages/WhyChooseUs';
-import NotFound from '@/pages/NotFound';
 //import { Toaster } from '@/components/ui/toaster';
 
 const App: React.FC = () => {
@@ -21,7 +20,6 @@ const App: React.FC = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/clientele" element={<Clientele />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
-        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
     </BrowserRouter>
